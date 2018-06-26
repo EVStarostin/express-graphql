@@ -54,3 +54,25 @@ QUERY VARIABLES
   "courseID2": 2
 }
 ```
+
+```javascript
+mutation updateCourseTopic($id: Int!, $topic: String!) {
+  updateCourseTopic(id: $id, topic: $topic) {
+    ...courseFields
+  }
+}
+
+fragment courseFields on Course {
+  title
+  author
+  description
+  topic
+  url
+}
+
+QUERY VARIABLES
+{
+  "id": 1,
+  "topic": "JavaScript"
+}
+```
