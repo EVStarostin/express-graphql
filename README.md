@@ -13,3 +13,17 @@ query getSingleCourse($courseID: Int!) {
 
 {"courseID": 1}
 ```
+
+```javascript
+query getCoursesForTopic($courseTopic: String!) {
+  courses(topic: $courseTopic) {
+    title
+    author
+    description
+    topic
+    url
+  }
+}
+
+{"courseTopic": "Node.js"}
+```
