@@ -10,4 +10,6 @@ query getSingleCourse($courseID: Int!) {
     url
   }
 }
+
+{"courseID": 1}
 ```
