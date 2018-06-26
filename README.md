@@ -11,6 +11,7 @@ query getSingleCourse($courseID: Int!) {
   }
 }
 
+QUERY VARIABLES
 {"courseID": 1}
 ```
 
@@ -25,6 +26,7 @@ query getCoursesForTopic($courseTopic: String!) {
   }
 }
 
+QUERY VARIABLES
 {"courseTopic": "Node.js"}
 ```
 
@@ -46,6 +48,7 @@ fragment courseFields on Course {
   url
 }
 
+QUERY VARIABLES
 {
   "courseID1": 1,
   "courseID2": 2
